@@ -280,7 +280,9 @@ q_total = q_plano + q_línea = 16 μC + (-6 μC) = 10 μC
 Φ = q_total / ε₀ = 10 μC / ε₀
 ```
 
-**Respuesta:** Φ = 10/ε₀ μC
+**Respuesta:** Φ = 10 μC / ε₀ = 10 × 10⁻⁶ C / ε₀ ≈ 1.13 × 10⁶ N·m²/C
+
+(donde se usa ε₀ = 8.854 × 10⁻¹² C²/(N·m²))
 
 **Nota del profesor:** Observa que aunque el plano es infinito, solo cuenta la parte que está dentro del cubo para calcular la carga encerrada. El resto del plano contribuye con líneas que entran y salen, pero no al flujo neto.
 
@@ -330,11 +332,11 @@ Por simetría cilíndrica, E⃗ es radial y constante a distancia r:
 ```
 E · 2πrL = πρ₀Lr²(2a² - r²)/(2a²ε₀)
 
-E = ρ₀Lr²(2a² - r²)/(2a²ε₀ · 2πrL)
+E = πρ₀Lr²(2a² - r²)/(2a²ε₀ · 2πrL)
 
-E = ρ₀r(2a² - r²)/(4πa²ε₀)
+E = ρ₀r²(2a² - r²)/(2a²ε₀ · 2r)
 
-E = ρ₀r(2a² - r²)/(4ε₀a²)
+E = ρ₀r(2a² - r²)/(4a²ε₀)
 ```
 
 **Respuesta parte 2:** E = ρ₀r(2a² - r²)/(4ε₀a²)
@@ -439,6 +441,7 @@ E = Q/(πε₀r²)
 **Nota del profesor:** 
 - Observa cómo el campo entre los cascarones solo "ve" la carga del cascarón interno
 - Desde fuera, solo importa la carga neta total (5Q - Q = 4Q)
+- La simplificación: E = 4Q/(4πε₀r²) = Q/(πε₀r²)
 - El conductor externo redistribuye su carga: -5Q en su superficie interna (para cancelar el campo del cascarón interno) y +4Q en su superficie externa
 
 ---
