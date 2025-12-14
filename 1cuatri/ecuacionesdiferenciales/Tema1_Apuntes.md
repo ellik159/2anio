@@ -273,9 +273,9 @@ Como profesor, te enseñaré a identificar las características de cada ecuació
 
 **Paso 4:** No homogénea (si σ ≠ 0)
 
-**Respuesta:** EDP lineal de primer orden
+**Respuesta:** EDP lineal de primer orden no homogénea (si σ ≠ 0)
 
-**Contexto físico:** Describe conservación de masa/carga. ρ es densidad, j es corriente, σ es fuente.
+**Contexto físico:** Describe conservación de masa/carga. ρ es densidad, j es corriente, σ representa fuentes/sumideros (términos de creación/destrucción).
 
 ---
 
