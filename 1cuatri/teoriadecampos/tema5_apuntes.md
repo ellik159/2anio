@@ -38,10 +38,12 @@ Para el brazo vertical (perpendicular):
 t₂ = (2l/c) · 1/√(1-v²/c²)
 ```
 
-Diferencia de tiempos (aproximación):
+Diferencia de tiempos (aproximación para v << c):
 ```
 Δt ≈ lv²/c³
 ```
+
+Esta aproximación se obtiene expandiendo en serie de Taylor las expresiones anteriores y despreciando potencias superiores a v²/c², dado que v/c ≈ 10⁻⁴ para la Tierra.
 
 **Resultado sorprendente:**
 - ¡La diferencia de tiempos fue **CERO**!
@@ -68,7 +70,7 @@ Einstein formuló su teoría basándose en dos postulados fundamentales:
 #### **Postulado 2: Constancia de la velocidad de la luz**
 > *En cualquier sistema de referencia inercial, la velocidad de la luz en el vacío es una constante universal `c`, independiente del movimiento relativo entre la fuente y el observador.*
 
-- `c ≈ 300,000 km/s` es una constante universal
+- `c ≈ 3 × 10⁸ m/s` (más precisamente: c = 299,792,458 m/s) es una constante universal
 - La velocidad de la luz es la misma para todos los observadores inerciales
 - Es la velocidad máxima a la que se puede propagar cualquier señal
 
@@ -603,7 +605,12 @@ c = 3 × 10⁸ m/s
 ```
 
 **Paso 3:** Como β << 1, usar aproximación
-Para velocidades muy pequeñas comparadas con c:
+Para velocidades muy pequeñas comparadas con c, podemos expandir γ en serie de Taylor:
+```
+γ = 1/√(1-β²) = (1-β²)⁻¹/² ≈ 1 + β²/2 + 3β⁴/8 + ...
+```
+
+Para β muy pequeño, solo consideramos el primer término:
 ```
 γ ≈ 1 + β²/2 = 1 + (1.133 × 10⁻⁶)²/2
 ```
