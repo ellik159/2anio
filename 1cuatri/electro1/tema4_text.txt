@@ -1,0 +1,1087 @@
+Tema 4
+
+Electromagnetismo I
+
+Multipolos eléctricos y
+condiciones de frontera
+
+Índice
+Esquema. . . . . . . . . . . . . . . . . . . . . . .
+
+2
+
+Ideas clave . . . . . . . . . . . . . . . . . . . . . .
+
+3
+
+4.1 Introducción y objetivos . . . . . . . . . . . . .
+
+3
+
+4.2 Desarrollos multipolares del potencial . . . . . . . .
+
+4
+
+4.3 Dipolo eléctrico . . . . . . . . . . . . . . . . .
+
+6
+
+4.4 Cuadripolo eléctrico . . . . . . . . . . . . . . .
+
+8
+
+4.5 Dipolo y campo externo . . . . . . . . . . . . .
+
+12
+
+4.6 Superficies de discontinuidad . . . . . . . . . . .
+
+13
+
+4.7 Condiciones de frontera . . . . . . . . . . . . .
+
+14
+
+4.8 Cuaderno de ejercicios . . . . . . . . . . . . . .
+
+16
+
+4.9 Referencias bibliográficas . . . . . . . . . . . . .
+
+17
+
+Esquema
+
+Multipolos eléctricos
+
+Monopolo
+eléctrico
+
+Dipolo eléctrico
+
+Cuadripolo
+eléctrico
+
+Superficies de discontinuidad
+
+Condiciones
+frontera E
+
+Normales
+
+Tangenciales
+
+Electromagnetismo ITema 4. Esquema
+
+2
+
+Ideas clave
+4.1 Introducción y objetivos
+Hasta ahora hemos visto lo que pasa cuando tenemos cargas en situaciones estáticas,
+cuál es el campo eléctrico y el potencial de un sistema de cargas, o de una distribución
+de cargas. La pregunta que queremos resolver ahora en este capítulo es qué pasa si
+tenemos un sistema de cargas en el que nos encontramos lo suficientemente lejos de
+las cargas como para que parezcan un punto en la distancia.
+Podemos pensar que una buena aproximación para el valor del potencial sería 𝑉 ∼
+1 𝑄
+, donde 𝑄 es la carga total. Pero nos interesa tener algo más preciso que ese
+4𝜋𝜖0 𝑟
+
+valor. Para eso se hace lo que se llama un desarrollo multipolar. Y como es obvio los
+términos que van a dominar de este desarrollo son los primeros, que son el término
+monopolar y el dipolar.
+Añadiremos a este tema un apartado importante que no nos hemos referido hasta
+ahora, pero será importante saberlo para el capítulo siguiente donde tendremos me‐
+dios materiales, y encontraremos lo que se llama superficies de discontinuidad, es
+decir, dos materiales diferentes. Aprenderemos cómo transiciona el campo eléctrico
+de un medio a otro y si es continuo o no. Con más detalle, los objetivos del tema son:
+▸ Comprender que se puede hacer un desarrollo multipolar del potencial cuando
+
+estamos lo suficientemente lejos de la fuente de carga.
+▸ Entender cuáles son los términos monopolar y dipolar.
+▸ Saber que existe el término cuadripolar y superiores, y entender cómo se pue‐
+
+den calcular.
+▸ Entender qué pasa con el campo eléctrico en una superficie de discontinuidad.
+
+Electromagnetismo ITema 4. Ideas clave
+
+3
+
+4.2 Desarrollos multipolares del potencial
+Hemos visto que para calcular el potencial eléctrico debido a una distribución arbitra‐
+ria de cargas como se muestra en la Figura 1 se determina con la siguiente expresión:
+𝑁
+
+𝜙(⃗𝑟) =
+
+𝑞𝑖
+1
+,
+4𝜋𝜖0 ∑
+|⃗
+𝑟
+−
+𝑟
+⃗
+|
+𝑖
+𝑖=1
+
+(1)
+
+donde la suma se toma sobre todas las cargas puntuales, 𝑟⃗𝑖 es la posición de cada carga
+en el sistema de referencia elegido y 𝑟⃗ es la posición en la que se desea muestrear el
+valor del campo eléctrico.
+Es evidente de la Ecuación (1) que cada sumando
+z
+
+tiene una componente que depende de la distan‐
+
+P
+
+cia de cada carga al punto de muestreo en el de‐
+nominador. En el caso de sistemas complejos es‐
+
+r
+
+q3
+q1
+
+r3
+r1
+
+tos cálculos se vuelven muy tediosos rápidamen‐
+
+y
+
+te. Sin embargo esta dependencia se puede rees‐
+cribir así:
+x
+
+1
+|⃗𝑟 − 𝑟⃗𝑖 |
+
+=
+
+1
+1/2
+
+2
+(𝑟2 + 𝑟𝑖 − 2𝑟𝑟𝑖 cos 𝜃𝑖 )
+2
+
+=
+
+r2
+q2
+
+1
+,
+𝑟(1 + 𝑡)1/2
+Figura 1: Se muestra el sistema
+(2) de cargas puntuales para el que
+
+𝑟
+𝑟
+donde 𝑡 = −2 𝑟𝑖 cos 𝜃𝑖 + ( 𝑟𝑖 ) , y donde 𝑟 = |⃗𝑟| y se realiza el cálculo multipolar del
+potencial.
+𝑟𝑖 = |⃗𝑟𝑖 | las distancias respecto al origen de coor‐
+
+denadas. De esta manera la inversa de la distancia
+relativa se puede aproximar vía el desarrollo por suma de potencias siguiente:
+1
+3
+5
+1
+= 1 − 𝑡 + 𝑡2 − 𝑡3 + … .
+1/2
+2
+8
+16
+(1 + 𝑡)
+
+(3)
+
+Es importante notar que usando este desarrollo de potencias cada término de la su‐
+ma infinita depende de una potencia cada vez mayor de la variable 𝑡, la cual a su vez
+depende del cociente 𝑟𝑖 /𝑟. Esto nos permite truncar esta expansión a segundo orden,
+y despreciar los términos (𝑟𝑖 /𝑟)3 y de orden superior. Considerando este escenario la
+
+Electromagnetismo ITema 4. Ideas clave
+
+4
+
+Ecuación (3) puede escribirse así:
+(1 + 𝑡)−1/2 ≃ 1 −
+
+𝑟
+𝑟 2
+𝑟
+𝑟 2 2
+3
+1
+−2 𝑖 cos 𝜃𝑖 + ( 𝑖 ) +
+−2 𝑖 cos 𝜃𝑖 + ( 𝑖 )
+,
+2[ 𝑟
+𝑟 ] 8[ 𝑟
+𝑟 ]
+
+(4)
+
+𝑟𝑖
+1 𝑟 2
+cos 𝜃𝑖 + ( 𝑖 ) (3 cos2 𝜃𝑖 − 1) .
+𝑟
+2 𝑟
+
+(5)
+
+(1 + 𝑡)−1/2 ≃ 1 −
+
+Reemplazando la Ecuación (5) en la Ecuación (2), la Ecuación (1) puede reescribirse
+como:
+𝑁
+
+𝑁
+
+𝑁
+
+2
+
+𝑞𝑖 𝑟𝑖
+1
+1
+1
+𝜙(⃗𝑟) =
+𝑞𝑖 +
+𝑞
+𝑟
+cos
+𝜃
++
+(3 cos2 𝜃𝑖 −1) +… (6)
+𝑖
+𝑖
+𝑖
+2 ∑
+3 ∑ 2
+4𝜋𝜖0 𝑟 ∑
+4𝜋𝜖
+𝑟
+4𝜋𝜖
+𝑟
+0
+0
+𝑖=1
+𝑖=1
+𝑖=1
+Esta nueva expansión se llama desarrollo multipolar del potencial eléctrico y, además
+de su simplicidad matemática, permite una interpretación física efectiva sobre las pro‐
+piedades eléctricas del sistema de cargas. Matemáticamente es importante notar que
+ahora cada una de estas sumas depende exclusivamente de la distancia de cada car‐
+ga al origen de coordenadas, y del ángulo que este forma con la dirección del punto
+de muestreo. Cada una de estas sumas recibe el nombre de término monopolar, tér‐
+mino dipolar, término cuadripolar, etc., y que su contribución al campo eléctrico total
+depende de la distancia con respecto al punto de muestreo, como 1/𝑟, 1/𝑟2 , 1/𝑟3 , etc.
+Cabe mencionar que la magnitud de todos estos términos, con excepción del término
+monopolar, depende fuertemente del sistema de coordenadas (explícitamente del án‐
+gulo formado por la dirección 𝑟⃗ y de 𝑟⃗𝑖 ). En la práctica, uno puede escoger un origen
+de coordenadas que elimine alguno de los términos de la expansión. En muchas oca‐
+siones es útil expresar esta dependencia de la siguiente manera:
+cos 𝜃𝑖 =
+
+𝑟⃗ ⋅ 𝑟⃗𝑖
+𝑟⃗
+= 𝑟̂ ⋅ 𝑖 .
+𝑟𝑟𝑖
+𝑟𝑖
+
+(7)
+
+El primer término, el monopolar, contiene el sumatorio de todas las cargas, es decir la
+carga neta total del sistema:
+𝑁
+
+𝑄
+1
+𝑞𝑖 =
+𝜙𝑀 (⃗𝑟) =
+∑
+4𝜋𝜖0 𝑟 𝑖=1
+4𝜋𝜖0 𝑟
+
+Electromagnetismo ITema 4. Ideas clave
+
+5
+
+Y para una distribución continua de cargas, este término puede escribirse fácilmente
+como:
+𝜙𝑀 (⃗𝑟) =
+
+1
+𝜌(⃗𝑟′ )𝑑𝑉 ′
+4𝜋𝜖0 𝑟 ∫
+𝑉
+
+A continuación analizaremos con más detalle los términos dipolar y cuadripolar del
+potencial eléctrico.
+
+4.3 Dipolo eléctrico
+Muchas veces, especialmente cuando el signo de las cargas se anula, el segundo tér‐
+mino de la expansión multipolar se vuelve el dominante en el cálculo del potencial
+eléctrico. El término dipolar hallado anteriormente es:
+𝑁
+
+1
+𝑞𝑖 𝑟𝑖 cos 𝜃𝑖 .
+𝜙𝐷 (⃗𝑟) =
+4𝜋𝜖0 𝑟2 ∑
+𝑖=1
+
+(8)
+
+Usando la expresión en la Ecuación (7), esta ecuación se puede escribir como:
+𝑁
+
+1
+1
+𝑟̂ ⋅
+𝑞𝑖 𝑟⃗𝑖 =
+𝑟 ̂ ⋅ 𝑝,
+⃗
+𝜙𝐷 (⃗𝑟) =
+2
+∑
+4𝜋𝜖0 𝑟
+4𝜋𝜖0 𝑟2
+𝑖=1
+
+(9)
+
+donde toda la dependencia de la distribución espacial del sistema de cargas es conte‐
+nido dentro del vector
+
+𝑁
+
+𝑝⃗ =
+
+𝑞 𝑟⃗ .
+∑ 𝑖 𝑖
+𝑖=1
+
+A este vector 𝑝⃗ se le denomina momento dipolar o dipolo eléctrico y, como ya se discu‐
+tió, es una característica intrínseca del sistema de cargas. Para una distribución con‐
+tinua de cargas, ésta puede presentar una configuración dipolar cuyo momento se
+obtiene de la siguiente expresión:
+𝑝⃗ =
+
+∫
+𝑉
+
+𝑑𝑉 ′ 𝑟⃗′ 𝜌(⃗𝑟′ ) .
+
+Electromagnetismo ITema 4. Ideas clave
+
+6
+
+Si os interesa saber un poco sobre el momento dipolar de un electrón como curiosidad,
+podéis leer (Maldonado Luna, Braian Adair, 2020).
+
+Ejemplo 1. Campo eléctrico de un dipolo
+
+Las cargas 𝑄 y −𝑄 se encuentran a una distan‐
+cia 𝑑 la una de la otra. Calcula el campo eléctri‐
+co producido por ellas a orden O( 𝑟13 ). Debido
+a que el sistema de cargas tiene una carga ne‐
+ta cero, el término líder de la expansión (6) es
+el dipolar. Consideremos que ambas cargas se
+alinean a lo largo del eje 𝑧, escogiendo el ori‐
+gen de coordenadas en el punto medio de la
+distancia entre ellos (el más conveniente de‐
+bido a la simetría en el sistema). El momento
+dipolar es:
+𝑑
+𝑑
+𝑝⃗ = (−𝑄) (− 𝑧)
+̂ + (+𝑄) (+ 𝑧)
+̂ = +𝑄𝑑 𝑧̂ .
+2
+2
+
+Para un sistema binario de cargas iguales posi‐
+
+Figura 2: Podemos ver el campo
+eléctrico de un dipolo (las lineas
+negras), y ls lineas equipotencia‐
+les (lineas discontinuas en color
+rojo). Fuente: Georgia State Uni‐
+versity.
+
+tiva y negativa, el momento dipolar se calcula
+como el producto de la carga individual por la distancia entre ellas, y el vector
+apunta desde la carga negativa a la positiva.
+Reemplazando el momento dipolar en la ecuación de campo dipolar tenemos:
+𝜙(⃗𝑟) =
+
+𝑄𝑑
+𝑄𝑑
+𝑟 ̂ ⋅ 𝑧̂ =
+cos 𝜃 ,
+2
+4𝜋𝜖0 𝑟
+4𝜋𝜖0 𝑟2
+
+la cual es válida para todo punto del espacio. Hemos expresado el potencial en
+términos de la coordenada esférica polar 𝜃. Ahora, para hallar el campo eléctrico,
+el sistema de coordenadas más conveniente es el esférico, donde el gradiente
+
+Electromagnetismo ITema 4. Ideas clave
+
+7
+
+viene dado por la siguiente terna:
+𝐸𝑟 (⃗𝑟) = −
+
+𝜕𝜙𝐷
+𝜕𝑟
+
+𝐸𝜃 (⃗𝑟) = −
+
+1 𝜕𝜙𝐷
+𝑟 𝜕𝜃
+
+𝐸𝜑 (⃗𝑟) = −
+
+1 𝜕𝜙𝐷
+,
+𝑟 sin 𝜃 𝜕𝜑
+
+debido a que 𝜙𝐷 solo depende de 𝑟 y 𝜃, la componente azimutal es cero y el
+campo eléctrico solo tiene dos componentes:
+𝐸𝑟 (𝑟, 𝜃) =
+
+𝑄𝑑
+cos 𝜃 ,
+2𝜋𝜖0 𝑟3
+
+𝐸𝜃 (𝑟, 𝜃) =
+
+𝑄𝑑
+sin 𝜃 .
+4𝜋𝜖0 𝑟3
+
+Entonces:
+
+𝐸⃗𝐷 (𝑟, 𝜃) =
+
+𝑄𝑑
+(2 cos 𝜃 𝑟 ̂ + sin 𝜃 𝜃 )̂ .
+4𝜋𝜖0 𝑟3
+
+La gráfica de superficies equipotenciales para este caso se muestra en la siguiente
+figura. Las líneas de campo eléctrico (en dirección opuesta al gradiente de campo
+escalar) también se muestran. Existen simulaciones por ordenador que permiten
+simular las lineas equipotenciales como podemos ver aquí (Alzugaray, Gloria E
+and Massa, Marta B and Moreira, Marco A, 2014).
+
+4.4 Cuadripolo eléctrico
+El siguiente término dominante de la Ecuación (6) es el término cuadripolar:
+𝑁
+
+2
+
+𝑞𝑖 𝑟𝑖
+1
+𝜙𝑄 (⃗𝑟) =
+(3 cos2 𝜃𝑖 − 1) .
+3
+∑
+4𝜋𝜖0 𝑟 𝑖=1 2
+
+(10)
+
+Electromagnetismo ITema 4. Ideas clave
+
+8
+
+que reescribiremos de la forma:
+𝑁
+
+𝜙𝑄 (⃗𝑟) =
+
+2 2
+
+𝑞𝑖 𝑟 𝑟𝑖
+1
+(3 cos2 𝜃𝑖 − 1) .
+5
+∑
+2
+4𝜋𝜖0 𝑟 𝑖=1
+
+(11)
+
+Atendiendo al término de dentro del sumatorio, éste se puede reescribir en función
+de las coordenadas cartesianas de la posición de las cargas:
+𝑞𝑖 𝑟2 𝑟2𝑖
+2
+
+𝑞𝑖 2 2
+𝑞
+2
+(3𝑟 𝑟𝑖 cos2 𝜃𝑖 − 𝑟2 𝑟2𝑖 ) = 𝑖 [3 (𝑟⃗ ⋅ 𝑟⃗𝑖 ) − 𝑟2 𝑟2𝑖 ] =
+2
+2
+3𝑞𝑖
+𝑞𝑖 2
+2
+=
+𝑥𝑥 + 𝑦𝑦𝑖 + 𝑧𝑧𝑖 ) − (𝑥 + 𝑦2 + 𝑧2 ) 𝑟2𝑖 =
+2 ( 𝑖
+2
+𝑞
+3𝑞𝑖
+𝑥𝑥𝑖 + 𝑦𝑦𝑖 + 𝑧𝑧𝑖 ) (𝑥𝑥𝑖 + 𝑦𝑦𝑖 + 𝑧𝑧𝑖 ) − 𝑖 (𝑥2 + 𝑦2 + 𝑧2 ) 𝑟2𝑖 .
+=
+(
+2
+2
+
+(3 cos2 𝜃𝑖 − 1) =
+
+Utilizaremos la notación de las componentes cartesianas 𝑥𝑗 y (𝑥𝑖 )𝑗 , con 𝑗 = 1, 2, 3,
+donde 𝑥1 = 𝑥, 𝑥2 = 𝑦 y 𝑥3 = 𝑧, y escribiremos las sumas sobre las tres componentes
+con un sumatorio, distinguiendo con dos índices distintos (𝑗 y 𝑘) cuando multiplique‐
+mos dos sumatorios por separado:
+𝑞𝑖 𝑟2 𝑟2𝑖
+2
+
+3
+
+(3 cos2 𝜃𝑖 − 1) =
+
+3
+
+3
+
+𝑞𝑖 𝑟2
+3𝑞𝑖
+𝑥𝑥 =
+𝑥𝑗 (𝑥𝑖 )𝑗
+𝑥𝑘 (𝑥𝑖 )𝑘 − 𝑖
+∑ 𝑗 𝑗
+∑
+2 (∑
+2
+)
+(
+)
+𝑗=1
+𝑗=1
+𝑘=1
+3
+
+3
+
+3
+
+3
+
+𝑞𝑖 𝑟2𝑖
+3𝑞𝑖
+=
+𝑥 𝑥 (𝑥 ) (𝑥 ) −
+𝑥𝑥 𝛿 =
+∑ 𝑗 𝑘 𝑖𝑗 𝑖𝑘
+∑ 𝑗 𝑘 𝑗𝑘
+2 ∑
+2 ∑
+𝑗=1 𝑘=1
+𝑗=1 𝑘=1
+3
+
+3
+
+𝑞
+= 𝑖
+𝑥 𝑥 3(𝑥 ) (𝑥 ) − 𝑟2𝑖 𝛿𝑗𝑘 ) .
+∑ 𝑗 𝑘( 𝑖 𝑗 𝑖 𝑘
+2∑
+𝑗=1 𝑘=1
+Para agrupar términos hemos utilizado convenientemente la delta de Kronecker, que
+recordemos 𝛿𝑗𝑘 = 0, cuando 𝑗 ≠ 𝑘, y 𝛿𝑗𝑘 = 1 cuando 𝑗 = 𝑘. Hemos conseguido así
+agrupar por sí sola la información de las posiciones del sistema de cargas discretas.
+Sustituyendo en la Ecuación (11), tenemos que:
+
+3
+3
+⎛𝑁
+⎞
+1
+1 1
+1
+2
+𝑥 ⎜ 𝑞 3(𝑥 ) (𝑥 ) − 𝑟𝑖 𝛿𝑗𝑘 )⎟ 𝑥𝑘 =
+𝑥𝑄 𝑥 ,
+𝜙𝑄 (⃗𝑟) =
+∑ 𝑗 ⎜∑ 𝑖 ( 𝑖 𝑗 𝑖 𝑘
+∑ 𝑗 𝑗𝑘 𝑘
+⎟
+4𝜋𝜖0 2𝑟5 𝑗,𝑘=1
+4𝜋𝜖0 2𝑟5 𝑗,𝑘=1
+𝑖=1
+⎝
+⎠
+(12)
+
+Electromagnetismo ITema 4. Ideas clave
+
+9
+
+donde 𝑄𝑗𝑘 denota el tensor momento cuadripolar, que condensa las características
+efectivas del sistema de carga, como habíamos desarrollado para el dipolo eléctrico.
+En este caso, se trata de un tensor de segundo rango, definido por:
+𝑁
+
+𝑄𝑗𝑘 =
+
+𝑞 3(𝑥 ) (𝑥 ) − 𝑟2𝑖 𝛿𝑗𝑘 ) ,
+∑ 𝑖( 𝑖 𝑗 𝑖 𝑘
+
+(13)
+
+𝑖=1
+
+donde distinguimos entre los elementos de mismo índice (en la diagonal del tensor),
+como por ejemplo:
+𝑁
+
+𝑄𝑥𝑥 =
+
+∑
+
+𝑁
+
+𝑞𝑖 (3𝑥2𝑖 − 𝑟2𝑖 ) =
+
+𝑖=1
+
+𝑞 2𝑥2 − 𝑦2𝑖 − 𝑧2𝑖 ) ,
+∑ 𝑖( 𝑖
+𝑖=1
+
+y los elementos con diferentes índices (fuera de la diagonal del tensor), como por
+ejemplo:
+𝑁
+
+𝑄𝑥𝑦 =
+
+∑
+
+3𝑞𝑖 𝑥𝑖 𝑦𝑖
+
+𝑖=1
+
+De esta manera, la Ecuación (12) puede expresarse de manera compacta como una
+multiplicación matricial:
+𝜙𝑄 (⃗𝑟) =
+
+1
+𝑟⃗† 𝑄⃗𝑟 ,
+8𝜋𝜖0 𝑟5
+
+(14)
+
+representado por el vector posición columna 𝑟⃗, el vector posición fila 𝑟⃗† y la matriz del
+tensor 𝑄.
+Si en lugar de una distribución de cargas discretas consideramos una distribución con‐
+tinua definida por la densidad de carga, puede deducirse de manera análoga a como
+venimos haciendo hasta ahora que el tensor momento cuadripolar se calcula como:
+𝑄𝑗𝑘 =
+
+∫
+𝑉
+
+𝑑𝑉 ′ 𝜌 (𝑟⃗′ ) (3𝑥′𝑗 𝑥′𝑘 − 𝑟′2 𝛿𝑗𝑘 )
+
+Ejemplo 2. Potencial eléctrico de un cuadripolo
+Tres cargas están alineadas en el eje 𝑧, cada una de las exteriores distanciadas de
+la central por una distancia 𝑑. La carga central tiene una carga −2𝑞 y las exteriores
+𝑞 cada una. Calcula el campo eléctrico del sistema de cargas.
+
+Electromagnetismo ITema 4. Ideas clave
+
+10
+
+Figura 3: Sistema de cargas cuadripolar
+
+La carga neta del sistema es cero, por tanto el potencial eléctrico no tiene com‐
+ponente monopolar. De la misma manera, debido a la simetría de disposición de
+las cargas, el momento dipolar es cero:
+𝑝⃗ = 𝑞(−𝑑)𝑧 ̂ + (−2𝑞)0⃗ + 𝑞𝑑 𝑧̂ = 0⃗ ,
+por lo que también el término dipolar del potencial es cero.
+Calculemos ahora el tensor momento cuadrupolar a partir de la Ecuación (13). Es
+fácil comprobar que, puesto que las tres cargas están en 𝑥 = 𝑦 = 0, los elementos
+no diagonales del tensor son nulos:
+𝑄𝑥𝑦 = 𝑄𝑦𝑥 = 𝑄𝑥𝑧 = 𝑄𝑧𝑥 = 𝑄𝑦𝑧 = 𝑄𝑧𝑦 = 0 ,
+mientras que los diagonales son:
+𝑄𝑥𝑥 = 𝑄𝑦𝑦 = 𝑞(−𝑑 2 ) + (−2𝑞) ⋅ 0 + 𝑞(−𝑑 2 ) = −2𝑞𝑑 2 ,
+𝑄𝑧𝑧 = 𝑞 ⋅ 2𝑑 2 + (−2𝑞) ⋅ 0 + 𝑞 ⋅ 2𝑑 2 = 4𝑞𝑑 2 .
+
+El tensor puede escribirse de forma matricial como:
+⎛ −1 0 0 ⎞
+⎜
+⎟
+𝑄 = 2𝑞𝑑 2 ⎜ 0 −1 0 ⎟ .
+⎜
+⎟
+⎜ 0
+0 2 ⎟⎠
+⎝
+
+Electromagnetismo ITema 4. Ideas clave
+
+11
+
+Calculamos el potencial eléctrico cuadripolar a partir de la Ecuación (14):
+⎛ −1 0 0 ⎞ ⎛ 𝑥 ⎞
+2
+⎟⎜ ⎟
+⎜
+2𝑞𝑑
+⎜ 0 −1 0 ⎟ ⎜ 𝑦 ⎟ = 𝑞𝑑 (−𝑥2 − 𝑦2 + 2𝑧2 ) =
+𝜙(⃗𝑟) = 𝜙𝑄 (⃗𝑟) =
+𝑥
+𝑦
+𝑧
+)⎜
+⎟ ⎜ ⎟ 4𝜋𝜖0 𝑟5
+8𝜋𝜖0 𝑟5 (
+⎜ 0
+0 2 ⎟⎠ ⎜⎝ 𝑧 ⎟⎠
+⎝
+𝑞𝑑 2
+𝑞𝑑 2
+𝑞𝑑 2
+𝑧2
+2
+2
+=
+−𝑟
++
+3𝑧
+=
+3
+−
+1
+=
+3 cos2 𝜃 − 1)
+(
+)
+) 4𝜋𝜖0 𝑟3 (
+4𝜋𝜖0 𝑟5
+4𝜋𝜖0 𝑟3 ( 𝑟2
+2
+
+Hemos obtenido el potencial en coordenadas esféricas, a partir del cual podemos
+calcular el campo eléctrico con:
+𝐸𝑟 (⃗𝑟) = −
+
+𝜕𝜙
+𝜕𝑟
+
+𝐸𝜃 (⃗𝑟) = −
+
+1 𝜕𝜙
+𝑟 𝜕𝜃
+
+𝐸𝜑 (⃗𝑟) =
+
+1 𝜕𝜙
+.
+𝑟 sin 𝜃 𝜕𝜑
+
+De nuevo, debido a que 𝜙𝑄 solo depende de 𝑟 y 𝜃, la componente azimutal es
+cero y el campo eléctrico solo tiene dos componentes:
+2
+⃗ 𝜃) = 3𝑞𝑑 [(3 cos2 𝜃 − 1) 𝑟 ̂ + sin (2𝜃) 𝜃 ]̂ .
+𝐸(𝑟,
+4𝜋𝜖0 𝑟4
+
+4.5 Dipolo y campo externo
+Veamos en detalle que pasa cuando tenemos un dipolo eléctrico en un campo externo.
+Sabemos que un dipolo eléctrico consta de dos cargas iguales y opuestas que están
+separadas cierta distancia. En un presencia de un campo sentirá una fuerza:
+𝐹⃗ = 𝑞 𝐸⃗ .
+Pero no es tan simple. Si quieres saber más, te sugerimos que visualices este vídeo:
+
+Ŏ Accede al vídeo: Dipolo eléctrico en un campo eléctrico.
+
+Electromagnetismo ITema 4. Ideas clave
+
+12
+
+4.6 Superficies de discontinuidad
+En todas las situaciones discutidas hasta ahora se ha
+calculado el campo escalar y el campo eléctrico en el
+vacío o en algún medio homogéneo. Sin embargo es
+importante estudiar qué pasa con el campo eléctrico
+durante la transición de un medio a otro. Como ejem‐
+plos prácticos uno puede considerar la transición de
+un medio conductor a uno dieléctrico, o simplemen‐
+te la transición entre dos medios dieléctricos. Como
+
+Figura 4: Se muestra la refrac‐
+se puede esperar, estos cambios de medio producen ción del campo en una super‐
+ficie de discontinuidad, con
+cambios en el campo que generalmente son suaves y
+dos medios diferentes. Elabo‐
+continuos. En este apartado, sin embargo, se discuti‐ ración propia.
+rá el fenómeno idealizado de una transición abrupta
+o discontinua. El estudio de este fenómeno captura las propiedades más representa‐
+tivas de la transición entre dos medios y permite sentar las bases para un estudio mas
+detallado (a nivel molecular) que está fuera del alcance de este curso.
+Como se verá a continuación, en toda superficie de discontinuidad se puede calcular
+el efecto de la transición en los campos eléctricos usando el teorema de la divergencia
+y el rotacional. Esto es matemáticamente válido debido a que el campo eléctrico es
+un campo conservativo. A continuación discutiremos los cambios específicos para el
+campo eléctrico, aunque el desarrollo de este puede ser generalizado para cualquier
+campo conservativo.
+
+Electromagnetismo ITema 4. Ideas clave
+
+13
+
+4.7 Condiciones de frontera
+En el caso del fenómeno electromagnético, hay dos ecuaciones que describen el cam‐
+po eléctrico producido por fuentes estáticas, estas son:
+𝜌
+,
+𝜖0
+
+(15)
+
+∇ × 𝐸⃗ = 0 .
+
+(16)
+
+∇ ⋅ 𝐸⃗ =
+
+Componentes Normales y teorema de la divergencia
+Para este desarrollo nos apoyaremos en el teorema de la divergencia aplicado la Ecua‐
+ción (15), este es:
+
+∫
+𝑆
+
+𝐸⃗ ⋅ 𝑑 𝑆⃗ =
+
+1
+⃗
+∇ ⋅ 𝐸𝑑𝑉
+=
+𝜌 𝑑𝑉 .
+∫
+𝜖0 ∫
+𝑉
+𝑉
+
+(17)
+
+En el caso de superficies de discontinuidad ideales, podemos construir un pequeño ci‐
+lindro recto de altura infinitesimal ℎ y volumen ℎ×𝑆, con las caras paralelas a la super‐
+ficie
+
+de
+
+discontinuidad
+
+tal
+
+como
+
+se
+
+muestra
+
+en
+
+la
+
+Figura
+
+5.
+
+Si hacemos la altura del cilindro cada vez más pequeña
+en el límite ℎ → 0, la contribución del flujo en el la‐
+teral del cilindro debido a cualquier componente tan‐
+gencial del campo es nulo pues su superficie también
+tiende a cero.
+
+∫
+𝑆
+
+𝐸⃗ ⋅ 𝑑 𝑆⃗ = (𝐸1,𝑛 − 𝐸2,𝑛 )𝑆 .
+
+(18)
+
+En este mismo límite, la carga encerrada por el ci‐
+
+Figura 5: Se muestra el vo‐
+lindro infinitesimalmente pequeño viene dada por la lumen usado para calcular la
+condición de frontera utilizan‐
+densidad superficial de carga presente en la disconti‐
+do el teorema de la divergen‐
+nuidad:
+cia. Elaboración propia.
+1
+1
+𝜌 𝑑𝑆 ′ = 𝜎𝑆 .
+𝑑ℎ′
+lím
+(19)
+) 𝜖0
+∫
+𝜖0 ℎ→0 (∫
+𝑆
+ℎ
+Si ahora usamos la Ecuación (17), encontraremos que en el límite las componentes
+Electromagnetismo ITema 4. Ideas clave
+
+14
+
+normales al campo quedan relacionadas por:
+
+𝐸1,𝑛 − 𝐸2,𝑛 =
+
+𝜎
+,
+𝜖0
+
+(20)
+
+donde 𝜎 es la densidad superficial de carga en todo punto de la superficie de disconti‐
+nuidad. Es decir, en la frontera de una superficie de discontinuidad la diferencia de las
+componentes normales del campo eléctrico es proporcional a la densidad superficial
+de carga.
+
+Componentes Tangenciales y teorema del rotacional
+En este caso nos apoyaremos en el teo‐
+rema del rotacional aplicado la Ecua‐
+ción (16), esto se escribe así:
+
+∮
+𝐿
+
+𝐸⃗ ⋅ 𝑑 𝑙⃗ =
+
+∫
+𝑆
+
+t1
+
+M1
+
+⃗
+(∇ × 𝐸)𝑑𝑆
+= 0 , (21)
+
+M2
+
+t2
+
+sabiendo que el rotacional del campo
+Figura 6: Se muestra el volumen usado para
+es nulo porque es conservativo. Ahora calcular la condición de frontera utilizando
+construiremos una pequeña trayectoria el teorema del rotacional.
+rectangular que cruce la superficie de
+discontinuidad tal como se muestra en la Figura 6. Si estrechamos cada vez más el
+rectángulo en su dimensión normal a la superficie, en el límite de esta dimensión ten‐
+diendo a cero no contribuye a la integral de camino la componente tangencial a ambos
+lados de la discontinuidad. De esta manera la integral queda reducida a:
+
+∫
+𝑏
+
+𝑑𝑏(𝐸1,𝑡 − 𝐸2,𝑡 ) = 0 .
+
+(22)
+
+Esto nos dice que, a diferencia de las componentes normales, las componentes tan‐
+genciales del campo eléctrico son continuas en la frontera de discontinuidad de dos
+medios.
+𝐸1,𝑡 = 𝐸2,𝑡
+
+(23)
+
+Electromagnetismo ITema 4. Ideas clave
+
+15
+
+Una consecuencia directa de esto es que en la superficie de un conductor perfecto,
+en el que sabemos que el campo eléctrico en su interior es nulo, la componente tan‐
+gencial en su superficie tiene que ser también nulo. Como ya habíamos analizado con
+anterioridad, únicamente presentará una componente normal que dependerá de la
+densidad de carga acumulada en la superficie del conductor.
+
+4.8 Cuaderno de ejercicios
+Ejercicio 1. En una trampa iónica se ha conseguido aislar un núcleo de plomo.
+Considerando que el tamaño de este núcleo no es mayor a 1 fermi (10−15 m), y
+que los nucleones se encuentran en el estado basal, calcula el potencial eléctri‐
+co generado por este núcleo a una distancia de 0.1 𝜇m de su centro. Solución:
+82𝑞
+= 1.18 Volts.
+4𝜋𝜖0 10−7
+
+Ejercicio 2. Calcula el momento dipolar de un sistema de tres cargas +𝑄 situadas
+equidistantes del origen de coordenadas, formando un triángulo equilátero de
+lado 𝑑. Solución: 𝑝⃗ = 0.
+
+Ejercicio 3. Calcula el momento dipolar 𝑝⃗ de dos cargas +𝑄 separadas por una
+distancia 𝑑 (según se rote el sistema de coordenadas). Considera que el origen de
+coordenadas y las dos cargas forman un triangulo equilátero. Solución:
+▸ 𝑝⃗ = 𝑄𝑑√3𝑦,̂ alineados paralelos al eje x
+▸ 𝑝⃗ = 𝑄𝑑√3𝑥,̂ alineados paralelos al eje y
+1
+2
+
+▸ 𝑝⃗ = 𝑄𝑑 (3𝑥̂ + √3𝑦),
+̂ una carga en el eje x y la otra a 60o
+1
+2
+
+▸ 𝑝⃗ = 𝑄𝑑 (−√3𝑥̂ + 3𝑦),
+̂ una carga en el eje y y la otra a 60o
+
+Electromagnetismo ITema 4. Ideas clave
+
+16
+
+Ejercicio 4. Para el sistema de cargas descrito en el ejercicio 2, calcula el campo
+1
+3𝑞
+eléctrico a una distancia 𝑟 = 20𝑑. Solución: 𝐸 = 4𝜋𝜖
+𝑟̂ .
+(20𝑑)2
+0
+
+Ejercicio 5. La superficie de separación entre dos regiones está determinada por
+el plano 3𝑥 + 4𝑧 = 5, en la cual se acumula una densidad de carga superficial
+𝜎 = 1 ⋅ 𝜀0 . Si el campo eléctrico en 3𝑥 + 4𝑧 > 5 es 𝐸⃗ = 10𝑥,̂ encontrar el campo
+eléctrico al otro lado de la superficie. Solución: 𝐸⃗ = 9.4𝑥̂ − 0.8𝑧.̂
+
+4.9 Referencias bibliográficas
+Alzugaray, Gloria E and Massa, Marta B and Moreira, Marco A (2014). La potencialidad
+de las simulaciones de campo eléctrico desde la perspectiva de la teoría de los
+campos conceptuales de Vergnaud. Latin‐American Journal of Physics Education,
+8(1).
+Maldonado Luna, Braian Adair (2020). Test de la física fundamental mediante el mo‐
+mento dipolar eléctrico de un electrón.
+
+Electromagnetismo ITema 4. Ideas clave
+
+17
+
+
