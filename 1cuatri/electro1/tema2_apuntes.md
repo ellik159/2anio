@@ -299,12 +299,14 @@ q_total = q_plano + q_línea = 16 μC + (-6 μC) = 10 μC
 Usamos coordenadas cilíndricas. El elemento de volumen es: dV = r' dr' dθ dz
 
 ```
-q_in = ∫∫∫ ρ dV = ∫[0 a L] ∫[0 a 2π] ∫[0 a r] ρ₀(1 - r'²/a²) r' dr' dθ dz
+q_in = ∫∫∫ ρ dV = ∫₀ᴸ ∫₀²ᵖ ∫₀ʳ ρ₀(1 - r'²/a²) r' dr' dθ dz
 ```
+
+donde los límites son: z de 0 a L, θ de 0 a 2π, y r' de 0 a r.
 
 **Paso 2:** Resolver la integral radial primero
 ```
-∫[0 a r] ρ₀(1 - r'²/a²) r' dr' = ρ₀ ∫[0 a r] (r' - r'³/a²) dr'
+∫₀ʳ ρ₀(1 - r'²/a²) r' dr' = ρ₀ ∫₀ʳ (r' - r'³/a²) dr'
                             = ρ₀ [r'²/2 - r'⁴/(4a²)] evaluado de 0 a r
                             = ρ₀ [r²/2 - r⁴/(4a²)]
                             = ρ₀ r²/2 (1 - r²/(2a²))
@@ -314,7 +316,7 @@ q_in = ∫∫∫ ρ dV = ∫[0 a L] ∫[0 a 2π] ∫[0 a r] ρ₀(1 - r'²/a²) 
 
 **Paso 3:** Integrar en θ y z
 ```
-q_in = ∫[0 a L] ∫[0 a 2π] ρ₀ r²(2a² - r²)/(4a²) dθ dz
+q_in = ∫₀ᴸ ∫₀²ᵖ ρ₀ r²(2a² - r²)/(4a²) dθ dz
      = ρ₀ r²(2a² - r²)/(4a²) · 2π · L
      = πρ₀Lr²(2a² - r²)/(2a²)
 ```
@@ -441,7 +443,8 @@ E = Q/(πε₀r²)
 **Nota del profesor:** 
 - Observa cómo el campo entre los cascarones solo "ve" la carga del cascarón interno
 - Desde fuera, solo importa la carga neta total (5Q - Q = 4Q)
-- La simplificación: E = 4Q/(4πε₀r²) = Q/(πε₀r²)
+- La simplificación algebraica: E = 4Q/(4πε₀r²) = 4Q/(4π·ε₀r²) = Q/(π·ε₀r²) ✓
+- Esta forma Q/(πε₀r²) es equivalente a 4Q/(4πε₀r²), solo factorizamos el 4
 - El conductor externo redistribuye su carga: -5Q en su superficie interna (para cancelar el campo del cascarón interno) y +4Q en su superficie externa
 
 ---
