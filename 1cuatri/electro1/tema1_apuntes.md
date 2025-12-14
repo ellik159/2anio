@@ -668,7 +668,7 @@ E⃗ = (σ/2ε₀) ŷ
 
 **Respuesta parte b):** `E⃗ = (σ/2ε₀) ŷ`
 
-**Nota del profesor:** ¡Importante! El campo de un plano infinito es **constante** e independiente de la distancia. Esto es muy diferente del campo de una carga puntual.
+**Nota del profesor:** ¡Importante! El campo de un plano infinito **idealizado** es constante e independiente de la distancia. Esto es muy diferente del campo de una carga puntual que decrece con 1/r². En la práctica, los planos finitos muestran dependencia con la distancia cuando nos alejamos a distancias comparables a sus dimensiones.
 
 ---
 
@@ -872,13 +872,13 @@ dq = σ dS = σ R² sin(θ) dθ dφ
 
 **Paso 4: Campo del elemento**
 
+El campo producido por un elemento de carga apunta del elemento hacia el origen (dirección radial hacia dentro). Si definimos r̂ como el vector unitario que apunta radialmente hacia afuera desde el origen, entonces el campo apunta en la dirección -r̂:
+
 ```
-dE⃗ = (1/4πε₀) × (dq/R²) × r̂
+dE⃗ = (1/4πε₀) × (dq/R²) × (-r̂)
 ```
 
-donde r̂ apunta del elemento al origen (hacia abajo).
-
-En coordenadas esféricas: r̂ = -r̂
+donde el signo negativo indica que el campo apunta hacia el centro.
 
 **Paso 5: Componentes**
 
@@ -912,7 +912,7 @@ Ez = -σ/4ε₀
 
 **Respuesta:** `E⃗ = -(σ/4ε₀) ẑ`
 
-**Nota del profesor:** Compara con el plano infinito (σ/2ε₀). La semiesfera produce la mitad del campo porque solo cubre la mitad del espacio.
+**Nota del profesor:** El resultado σ/4ε₀ (en comparación con σ/2ε₀ para un plano infinito) surge de la integración geométrica sobre la superficie curva de la semiesfera. El factor 1/2 proviene de integrar el coseno del ángulo polar sobre 0 a π/2, considerando cómo cada elemento contribuye a la componente z del campo en el centro.
 
 ---
 
