@@ -299,13 +299,13 @@ q_total = q_plano + q_línea = 16 μC + (-6 μC) = 10 μC
 Usamos coordenadas cilíndricas. El elemento de volumen es: dV = r' dr' dθ dz
 
 ```
-q_in = ∫∫∫ ρ dV = ∫₀ᴸ ∫₀²ᵖⁱ ∫₀ʳ ρ₀(1 - r'²/a²) r' dr' dθ dz
+q_in = ∫∫∫ ρ dV = ∫[0 a L] ∫[0 a 2π] ∫[0 a r] ρ₀(1 - r'²/a²) r' dr' dθ dz
 ```
 
 **Paso 2:** Resolver la integral radial primero
 ```
-∫₀ʳ ρ₀(1 - r'²/a²) r' dr' = ρ₀ ∫₀ʳ (r' - r'³/a²) dr'
-                            = ρ₀ [r'²/2 - r'⁴/(4a²)]₀ʳ
+∫[0 a r] ρ₀(1 - r'²/a²) r' dr' = ρ₀ ∫[0 a r] (r' - r'³/a²) dr'
+                            = ρ₀ [r'²/2 - r'⁴/(4a²)] evaluado de 0 a r
                             = ρ₀ [r²/2 - r⁴/(4a²)]
                             = ρ₀ r²/2 (1 - r²/(2a²))
                             = ρ₀ r²/2 · (2a² - r²)/(2a²)
@@ -314,7 +314,7 @@ q_in = ∫∫∫ ρ dV = ∫₀ᴸ ∫₀²ᵖⁱ ∫₀ʳ ρ₀(1 - r'²/a²) r
 
 **Paso 3:** Integrar en θ y z
 ```
-q_in = ∫₀ᴸ ∫₀²ᵖⁱ ρ₀ r²(2a² - r²)/(4a²) dθ dz
+q_in = ∫[0 a L] ∫[0 a 2π] ρ₀ r²(2a² - r²)/(4a²) dθ dz
      = ρ₀ r²(2a² - r²)/(4a²) · 2π · L
      = πρ₀Lr²(2a² - r²)/(2a²)
 ```
@@ -574,8 +574,8 @@ Esfera/punto:        E = Q / (4πε₀r²)
 Revisando los exámenes de la asignatura, los problemas de la Ley de Gauss típicamente aparecen como:
 
 1. **Cálculo directo de flujos** - Similar al Ejercicio 1
-2. **Aplicaciones con conductores y dieléctricos** - Problema 3 del examen
-3. **Simetría cilíndrica con corrientes** - Problema 5 del examen (tema posterior, pero usa Gauss)
+2. **Aplicaciones con conductores y dieléctricos** - Aparece frecuentemente
+3. **Simetría cilíndrica con corrientes** - Temas posteriores, pero usa los mismos principios de Gauss
 
 **Estrategia de examen:**
 - Lee bien si piden campo E, potencial V, o flujo Φ
