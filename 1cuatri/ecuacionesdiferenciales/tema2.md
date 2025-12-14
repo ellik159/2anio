@@ -72,7 +72,7 @@ y(x) = y₀·e^(-∫[x₀,x]a(s)ds) + e^(-∫[x₀,x]a(s)ds)·∫[x₀,x]f(s)e^(
 
 Entonces: z' = (1-p)y^(-p)y'
 
-#### 3.3 Ecuación de Ricatti
+#### 3.3 Ecuación de Riccati
 
 **Forma:** y' = a(x)y + b(x)y² + f(x)
 
