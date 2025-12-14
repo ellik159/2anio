@@ -77,7 +77,7 @@ p = m·v
 
 **Unidades:** kg·m/s
 
-**Conservación:** En ausencia de fuerzas externas, el momento lineal se conserve:
+**Conservación:** En ausencia de fuerzas externas, el momento lineal se conserva:
 
 ```
 Si ΣF_ext = 0  ⟹  p = constante
@@ -189,7 +189,7 @@ P = m·g
 Donde:
 - `g` ≈ 9.8 m/s² (aceleración de la gravedad)
 
-**Importante:** La masa pesante y la masa inercial son iguales (Principio de Equivalencia).
+**Importante:** La masa gravitatoria y la masa inercial son iguales (Principio de Equivalencia).
 
 ### 11. Sistemas de Referencia No Inerciales
 
@@ -405,6 +405,8 @@ Para m₂ (asciende): m₂·a = T - m₂·g
 
 Donde T es la tensión de la cuerda y a es la aceleración (igual para ambas masas).
 
+**Nota sobre convención de signos:** Tomamos como positivo el sentido del movimiento: descendente para m₁ y ascendente para m₂.
+
 #### Paso 3: Calcular la aceleración
 Sumando ambas ecuaciones:
 ```
@@ -592,6 +594,7 @@ a_c = 0.0228 m/s² ≈ 0.023 m/s²
 - Tiempo de vuelo
 - Alcance horizontal
 - Estrategia: Descomponer en movimiento horizontal (MRU) y vertical (MRUA)
+- Ver Ejercicio 3 resuelto en este documento
 
 **b) Cohetes / Propulsión**
 - Ecuación de Tsiolkovsky
@@ -603,6 +606,7 @@ a_c = 0.0228 m/s² ≈ 0.023 m/s²
 - Fuerzas ficticias (centrífuga, Coriolis)
 - Desviaciones en la Tierra
 - Estrategia: Identificar sistema de referencia y añadir fuerzas ficticias
+- Ver Ejercicios 6 y 7 resueltos en este documento
 
 #### 3. Consejos Prácticos para el Examen
 
