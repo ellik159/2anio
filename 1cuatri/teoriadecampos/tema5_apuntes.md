@@ -43,7 +43,7 @@ Diferencia de tiempos (aproximación para v << c):
 Δt ≈ lv²/c³
 ```
 
-Esta aproximación se obtiene expandiendo en serie de Taylor las expresiones anteriores y despreciando potencias superiores a v²/c², dado que v/c ≈ 10⁻⁴ para la Tierra.
+Esta aproximación se obtiene expandiendo en serie de Taylor las expresiones anteriores y despreciando potencias superiores a v²/c², dado que para la velocidad orbital de la Tierra v ≈ 30 km/s, tenemos v/c ≈ 10⁻⁴.
 
 **Resultado sorprendente:**
 - ¡La diferencia de tiempos fue **CERO**!
@@ -70,7 +70,9 @@ Einstein formuló su teoría basándose en dos postulados fundamentales:
 #### **Postulado 2: Constancia de la velocidad de la luz**
 > *En cualquier sistema de referencia inercial, la velocidad de la luz en el vacío es una constante universal `c`, independiente del movimiento relativo entre la fuente y el observador.*
 
-- `c ≈ 3 × 10⁸ m/s` (más precisamente: c = 299,792,458 m/s) es una constante universal
+- `c = 299,792,458 m/s` (valor exacto por definición)
+- En cálculos aproximados usaremos: `c ≈ 3.00 × 10⁸ m/s`
+- Es una constante universal
 - La velocidad de la luz es la misma para todos los observadores inerciales
 - Es la velocidad máxima a la que se puede propagar cualquier señal
 
@@ -261,11 +263,11 @@ Lo especial es la constante universal `c`, que representa:
 - Edad inicial del astronauta: 25 años
 - Velocidad del viaje: v = 1.8 × 10⁸ m/s
 - Tiempo transcurrido en la Tierra: Δt = 50 años
-- Velocidad de la luz: c = 3 × 10⁸ m/s
+- Velocidad de la luz: c = 3.00 × 10⁸ m/s
 
 **Paso 2:** Calcular el factor β
 ```
-β = v/c = (1.8 × 10⁸)/(3 × 10⁸) = 0.6
+β = v/c = (1.8 × 10⁸)/(3.00 × 10⁸) = 0.6
 ```
 
 **Paso 3:** Calcular el factor de Lorentz γ
@@ -448,7 +450,7 @@ c) Calcular la distancia que recorrerá en el sistema de referencia del muón.
 **Paso 4:** Calcular la distancia con el tiempo dilatado
 ```
 d_tierra = v × τ = 0.99c × 14.18 × 10⁻⁶ s
-d_tierra = 0.99 × 3 × 10⁸ m/s × 14.18 × 10⁻⁶ s
+d_tierra = 0.99 × 3.00 × 10⁸ m/s × 14.18 × 10⁻⁶ s
 d_tierra ≈ 4211.5 m
 ```
 
@@ -468,7 +470,7 @@ d_muón = d_tierra/γ = 4211.5/7.09 ≈ 594 m
 **Método 2 (usando tiempo propio):**
 ```
 d_muón = v × τ₀ = 0.99c × 2 × 10⁻⁶ s
-d_muón = 0.99 × 3 × 10⁸ × 2 × 10⁻⁶ ≈ 594 m
+d_muón = 0.99 × 3.00 × 10⁸ × 2 × 10⁻⁶ ≈ 594 m
 ```
 
 **Respuesta parte c:** En el sistema del muón, recorre **594 m**.
@@ -595,13 +597,13 @@ Si usáramos mecánica clásica: v = 0.6c + 0.9c = 1.5c > c ❌ ¡Imposible!
 **Paso 1:** Convertir unidades
 ```
 v = 1224 km/h = 1224 × 1000/3600 m/s = 340 m/s
-c = 3 × 10⁸ m/s
+c = 3.00 × 10⁸ m/s
 Δt = 48 h = 48 × 3600 s = 172,800 s
 ```
 
 **Paso 2:** Calcular β
 ```
-β = v/c = 340/(3 × 10⁸) = 1.133 × 10⁻⁶ ≈ 10⁻⁶
+β = v/c = 340/(3.00 × 10⁸) = 1.133 × 10⁻⁶ ≈ 10⁻⁶
 ```
 
 **Paso 3:** Como β << 1, usar aproximación
@@ -633,7 +635,7 @@ El retraso es:
 δt ≈ 111 ns
 ```
 
-**Respuesta:** El reloj del avión habrá retrasado aproximadamente **112 ns**.
+**Respuesta:** El reloj del avión habrá retrasado aproximadamente **111 ns** (con la aproximación usada; el valor dado en el problema original es 112 ns).
 
 **Interpretación física:**
 - Aunque la velocidad del sonido parece rápida (1224 km/h)
