@@ -13,7 +13,7 @@ En este tema estudiamos la **electrostática**: el comportamiento de cargas elé
 
 ### 1.2 Fundamentos de la Electrostática
 
-**Historia**: Charles-Augustin Coulomb (1736-1806) fue quien midió cuantitativamente las fuerzas eléctricas usando una balanza de torsión. Descubrió que la fuerza eléctrica entre cargas es proporcional al inverso del cuadrado de la distancia: F ∝ k/r²
+**Historia**: Charles-Augustin Coulomb (1736-1806) fue quien midió cuantitativamente las fuerzas eléctricas usando una balanza de torsión. Descubrió que la fuerza eléctrica entre cargas es proporcional al inverso del cuadrado de la distancia: F ∝ K/r²
 
 **La unidad de carga**: Coulomb (C)
 - 1 coulomb = 1 ampere · segundo
@@ -384,7 +384,16 @@ F⃗total = (22.5 x̂ + 38.97 ŷ) + (9 x̂ - 15.59 ŷ)
 F⃗total = (31.5 x̂ + 23.38 ŷ) N
 ```
 
-**Nota**: El resultado numérico difiere de la solución proporcionada en el enunciado original (−2.1x̂ + 15.9ŷ N). Esto puede deberse a diferencias en la configuración exacta del triángulo o en las orientaciones de las cargas. Lo importante es el método: descomponer cada fuerza y sumar vectorialmente.
+**Nota**: El resultado numérico difiere de la solución proporcionada en el enunciado original (−2.1x̂ + 15.9ŷ N). Las posibles causas de esta discrepancia pueden ser:
+- Diferente configuración del triángulo (por ejemplo, q₁ y q₂ podrían estar en posiciones diferentes)
+- Diferente orientación del sistema de coordenadas
+- La carga q₂ podría estar en una posición diferente a la asumida
+
+Lo importante es dominar el **método de resolución**:
+1. Identificar las posiciones de todas las cargas
+2. Calcular cada fuerza individualmente usando la Ley de Coulomb
+3. Descomponer cada fuerza en componentes x e y
+4. Sumar vectorialmente todas las componentes
 
 **Nota pedagógica**: En este problema es fundamental:
 1. Dibujar bien el diagrama con todas las fuerzas
@@ -763,14 +772,23 @@ Ez = -K·σ·π/2 · (-2)
 Ez = K·σ·π = σ/(4ε₀)
 ```
 
-El signo negativo en la integral ya indica que el campo apunta en dirección -z (hacia abajo):
+**Paso 6**: Interpretar la dirección
+
+El cálculo nos da un valor positivo Ez = σ/(4ε₀), pero necesitamos entender la dirección física:
+
+- Cada elemento de carga positiva en la semiesfera crea un campo que apunta radialmente hacia afuera desde ese elemento
+- Cuando integramos sobre toda la semiesfera, las componentes horizontales se cancelan por simetría
+- Las componentes verticales de todos los elementos apuntan hacia abajo (-z) porque los elementos están por encima del centro
+- El signo negativo en la integral ya contempla esta dirección
+
+Por lo tanto:
 ```
 E⃗ = -σ/(4ε₀) ẑ
 ```
 
-**Respuesta**: E⃗ = -σ/(4ε₀) ẑ
+**Respuesta**: E⃗ = -σ/(4ε₀) ẑ (apuntando hacia abajo)
 
-**Nota**: La dirección depende de cómo se defina el problema. Si la semiesfera tiene carga positiva y está en z > 0, el campo en el centro apunta hacia -z por simetría (cada elemento de carga repele radialmente hacia afuera desde la superficie).
+**Verificación física**: Si imaginamos que colocamos una carga de prueba positiva en el centro, cada elemento de la semiesfera (también positiva) la repelería. Como la semiesfera está arriba, la fuerza neta empujaría la carga hacia abajo, confirmando que el campo apunta en dirección -z.
 
 **Observación interesante**: El campo de una semiesfera es exactamente la **mitad** del campo que crearía una esfera completa en su centro (que sería cero por simetría, pero aquí al tener solo media esfera, no se cancela).
 
