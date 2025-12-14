@@ -5,7 +5,7 @@
 # For format details, see: https://gh.io/customagents/config
 
 name: Profesor de fisica
-description: 
+description: Profesor experto de fisica
 ---
 
 # My Agent
