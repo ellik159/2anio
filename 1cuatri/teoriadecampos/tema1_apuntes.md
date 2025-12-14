@@ -438,7 +438,7 @@ Un campo es solenoidal si: ∇·v⃗ = 0
 ```
 vₓ = x + 3y
 vᵧ = y - 2z
-vᵧ = x + az
+vz = x + az
 ```
 
 **Paso 3**: Calcular la divergencia
@@ -476,7 +476,7 @@ a = -2
 ```
 Aₓ = xz³
 Aᵧ = -2x²yz
-Aᵧ = 2yz⁴
+Az = 2yz⁴
 ```
 
 **Paso 2**: Calcular las derivadas necesarias
@@ -537,7 +537,7 @@ Componente k⃗: -4(1)(-1)(1) = 4
 ```
 vₓ = x + 2y + az
 vᵧ = bx - 3y - z
-vᵧ = 4x + cy + 2z
+vz = 4x + cy + 2z
 ```
 
 **Paso 3**: Calcular el rotacional
@@ -598,16 +598,16 @@ v⃗ = (x + 2y + 4z) i⃗ + (2x - 3y - z) j⃗ + (4x - y + 2z) k⃗
 
 **Paso 1**: Entender qué es r⃗·A⃗
 ```
-A⃗ = Aₓ i⃗ + Aᵧ j⃗ + Aᵧ k⃗ (constante)
-r⃗·A⃗ = xAₓ + yAᵧ + zAᵧ = escalar
+A⃗ = Aₓ i⃗ + Aᵧ j⃗ + Az k⃗ (constante)
+r⃗·A⃗ = xAₓ + yAᵧ + zAz = escalar
 ```
 
 **Paso 2**: Aplicar el gradiente
 Como r⃗·A⃗ es un escalar, primero calculamos su gradiente:
 ```
 ∇(r⃗·A⃗) = ∂(r⃗·A⃗)/∂x i⃗ + ∂(r⃗·A⃗)/∂y j⃗ + ∂(r⃗·A⃗)/∂z k⃗
-        = ∂(xAₓ + yAᵧ + zAᵧ)/∂x i⃗ + ∂(xAₓ + yAᵧ + zAᵧ)/∂y j⃗ + ∂(xAₓ + yAᵧ + zAᵧ)/∂z k⃗
-        = Aₓ i⃗ + Aᵧ j⃗ + Aᵧ k⃗
+        = ∂(xAₓ + yAᵧ + zAz)/∂x i⃗ + ∂(xAₓ + yAᵧ + zAz)/∂y j⃗ + ∂(xAₓ + yAᵧ + zAz)/∂z k⃗
+        = Aₓ i⃗ + Aᵧ j⃗ + Az k⃗
         = A⃗
 ```
 
