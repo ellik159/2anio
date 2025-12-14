@@ -367,9 +367,9 @@ x₂ = -6.873 m  (descartada, está fuera del rango)
 **Enunciado:**
 
 Sistema de tres cargas formando un triángulo equilátero de lado a = 0.10 m:
-- q₁ = 5 μC (vértice inferior izquierdo)
-- q₂ = -2 μC (vértice inferior derecho)
-- q₃ = 10 μC (vértice superior)
+- q₁ = 5 μC
+- q₂ = -2 μC
+- q₃ = 10 μC
 
 Calcular la fuerza resultante sobre q₃.
 
@@ -399,13 +399,13 @@ r₁₃ = √(0.05² + 0.0866²) = 0.10 m
 r̂₁₃ = (0.5, 0.866)
 ```
 
-Magnitud:
+Magnitud (ambas cargas positivas → repulsión):
 ```
 F₁₃ = K(q₁q₃/r₁₃²) = (9×10⁹)(5×10⁻⁶ × 10×10⁻⁶)/(0.10)²
 F₁₃ = (9×10⁹)(50×10⁻¹²)/(0.01) = 45 N
 ```
 
-Componentes:
+Componentes (la fuerza apunta de q₁ hacia q₃):
 ```
 F⃗₁₃ = 45(0.5 x̂ + 0.866 ŷ) = (22.5 x̂ + 38.97 ŷ) N
 ```
@@ -419,48 +419,37 @@ r₂₃ = 0.10 m
 r̂₂₃ = (-0.5, 0.866)
 ```
 
-Magnitud (q₂ es negativa, q₃ es positiva → se atraen):
+Como q₂ es negativa y q₃ es positiva, se atraen. La fuerza sobre q₃ apunta hacia q₂:
 ```
 F₂₃ = K|q₂q₃|/r₂₃² = (9×10⁹)(2×10⁻⁶ × 10×10⁻⁶)/(0.10)²
-F₂₃ = 18 N (atracción)
+F₂₃ = 18 N
 ```
 
-Como es atracción, la fuerza va de q₃ hacia q₂:
+La dirección de la atracción es de q₃ hacia q₂, que es opuesta a r̂₂₃:
 ```
-F⃗₂₃ = -18(-0.5 x̂ + 0.866 ŷ) = (9 x̂ - 15.59 ŷ) N
-```
-
-Pero realmente, como q₂ es negativa:
-```
-F⃗₂₃ = K(q₂q₃/r₂₃²) × r̂₂₃
-F⃗₂₃ = (9×10⁹)(-2×10⁻⁶ × 10×10⁻⁶)/(0.01) × (-0.5, 0.866)
-F⃗₂₃ = -18(-0.5, 0.866) = (9, -15.59) N
+F⃗₂₃ = 18 × (-r̂₂₃) = 18 × (0.5, -0.866) = (9 x̂ - 15.59 ŷ) N
 ```
 
 **Paso 4: Fuerza resultante**
 
 ```
 F⃗q₃ = F⃗₁₃ + F⃗₂₃
-F⃗q₃ = (22.5 + 9) x̂ + (38.97 - 15.59) ŷ
-F⃗q₃ = 31.5 x̂ + 23.38 ŷ N
+F⃗q₃ = (22.5 x̂ + 38.97 ŷ) + (9 x̂ - 15.59 ŷ)
+F⃗q₃ = 31.5 x̂ + 23.4 ŷ N
 ```
 
-Pero según el problema, debería ser:
-```
-F⃗q₃ = -2.1 x̂ + 15.9 ŷ N
-```
+**Nota del profesor:** El resultado calculado difiere de la solución dada (F⃗q₃ = -2.1 x̂ + 15.9 ŷ N). Esto puede deberse a:
+1. Una configuración diferente del triángulo en el problema original
+2. Diferentes posiciones de las cargas q₁ y q₂
 
-**Nota del profesor:** Hay una discrepancia. Verifiquemos con el ángulo de 60°:
+**Lo importante es el método:** 
+- Identificar las distancias y vectores unitarios correctamente
+- Aplicar la Ley de Coulomb para cada par de cargas
+- Usar superposición vectorial (sumar componente por componente)
+- Considerar el signo de las cargas para determinar atracción o repulsión
 
-En un triángulo equilátero, cada ángulo es 60°.
-
-```
-cos(60°) = 0.5, sin(60°) = 0.866
-```
-
-Recalculando más cuidadosamente y usando geometría exacta, la solución proporcionada es correcta.
-
-**Respuesta:** `F⃗q₃ = -2.1 x̂ + 15.9 ŷ N`
+**Respuesta del libro:** `F⃗q₃ = -2.1 x̂ + 15.9 ŷ N`  
+**Respuesta calculada:** `F⃗q₃ = 31.5 x̂ + 23.4 ŷ N` (con la configuración mostrada)
 
 ---
 
