@@ -443,7 +443,7 @@ vz = x + az
 
 **Paso 3**: Calcular la divergencia
 ```
-∇·v⃗ = ∂vₓ/∂x + ∂vᵧ/∂y + ∂vᵧ/∂z
+∇·v⃗ = ∂vₓ/∂x + ∂vᵧ/∂y + ∂vz/∂z
      = ∂(x + 3y)/∂x + ∂(y - 2z)/∂y + ∂(x + az)/∂z
      = 1 + 1 + a
      = 2 + a
@@ -482,19 +482,19 @@ Az = 2yz⁴
 **Paso 2**: Calcular las derivadas necesarias
 Para el rotacional necesitamos:
 ```
-∂Aᵧ/∂y = ∂(2yz⁴)/∂y = 2z⁴
-∂Aᵧ/∂z = ∂(-2x²yz)/∂z = -2x²y
+∂Az/∂y = ∂(2yz⁴)/∂y = 2z⁴
+∂Ay/∂z = ∂(-2x²yz)/∂z = -2x²y
 
-∂Aₓ/∂z = ∂(xz³)/∂z = 3xz²
-∂Aᵧ/∂x = ∂(2yz⁴)/∂x = 0
+∂Ax/∂z = ∂(xz³)/∂z = 3xz²
+∂Az/∂x = ∂(2yz⁴)/∂x = 0
 
-∂Aᵧ/∂x = ∂(-2x²yz)/∂x = -4xyz
-∂Aₓ/∂y = ∂(xz³)/∂y = 0
+∂Ay/∂x = ∂(-2x²yz)/∂x = -4xyz
+∂Ax/∂y = ∂(xz³)/∂y = 0
 ```
 
 **Paso 3**: Aplicar la fórmula del rotacional
 ```
-∇×A⃗ = (∂Aᵧ/∂y - ∂Aᵧ/∂z) i⃗ + (∂Aₓ/∂z - ∂Aᵧ/∂x) j⃗ + (∂Aᵧ/∂x - ∂Aₓ/∂y) k⃗
+∇×A⃗ = (∂Az/∂y - ∂Ay/∂z) i⃗ + (∂Ax/∂z - ∂Az/∂x) j⃗ + (∂Ay/∂x - ∂Ax/∂y) k⃗
 ```
 
 **Paso 4**: Sustituir
@@ -542,29 +542,29 @@ vz = 4x + cy + 2z
 
 **Paso 3**: Calcular el rotacional
 ```
-∇×v⃗ = (∂vᵧ/∂y - ∂vᵧ/∂z) i⃗ + (∂vₓ/∂z - ∂vᵧ/∂x) j⃗ + (∂vᵧ/∂x - ∂vₓ/∂y) k⃗
+∇×v⃗ = (∂vz/∂y - ∂vy/∂z) i⃗ + (∂vx/∂z - ∂vz/∂x) j⃗ + (∂vy/∂x - ∂vx/∂y) k⃗
 ```
 
 **Paso 4**: Calcular cada componente
 
 **Componente i⃗**:
 ```
-∂vᵧ/∂y = ∂(4x + cy + 2z)/∂y = c
-∂vᵧ/∂z = ∂(bx - 3y - z)/∂z = -1
+∂vz/∂y = ∂(4x + cy + 2z)/∂y = c
+∂vy/∂z = ∂(bx - 3y - z)/∂z = -1
 Componente i⃗ = c - (-1) = c + 1
 ```
 
 **Componente j⃗**:
 ```
-∂vₓ/∂z = ∂(x + 2y + az)/∂z = a
-∂vᵧ/∂x = ∂(4x + cy + 2z)/∂x = 4
+∂vx/∂z = ∂(x + 2y + az)/∂z = a
+∂vz/∂x = ∂(4x + cy + 2z)/∂x = 4
 Componente j⃗ = a - 4
 ```
 
 **Componente k⃗**:
 ```
-∂vᵧ/∂x = ∂(bx - 3y - z)/∂x = b
-∂vₓ/∂y = ∂(x + 2y + az)/∂y = 2
+∂vy/∂x = ∂(bx - 3y - z)/∂x = b
+∂vx/∂y = ∂(x + 2y + az)/∂y = 2
 Componente k⃗ = b - 2
 ```
 
