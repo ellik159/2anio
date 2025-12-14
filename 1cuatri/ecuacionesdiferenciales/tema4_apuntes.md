@@ -89,8 +89,8 @@ Para el sistema lineal homogéneo con A = [[a₁₁, a₁₂], [a₂₁, a₂₂
 
 | Condición | Tipo de punto | Estabilidad | Comportamiento |
 |-----------|---------------|-------------|----------------|
-| p = 0 | **Centro** | Estable | Órbitas cerradas, soluciones periódicas |
-| p < 0 | **Foco estable** | Estable | Espirales decrecientes hacia el punto |
+| p = 0 | **Centro** | Neutralmente estable | Órbitas cerradas, soluciones periódicas |
+| p < 0 | **Foco estable** | Asintóticamente estable | Espirales decrecientes hacia el punto |
 | p > 0 | **Foco inestable** | Inestable | Espirales crecientes alejándose |
 
 #### B) SISTEMAS NO-LINEALES
@@ -460,7 +460,7 @@ Fórmula general:
 - p = -1 < 0
 - q = 1
 
-**Tipo: FOCO ESTABLE** 🎯
+**Tipo: FOCO ASINTÓTICAMENTE ESTABLE** 🎯
 
 **PASO 5: Dibujar el mapa de fases**
 
@@ -657,14 +657,19 @@ det(J - λI) = -λ² - a = 0
 
 | Autovalores | Condición | Tipo de Punto | Estabilidad |
 |-------------|-----------|---------------|-------------|
-| λ₁, λ₂ reales | λ₂ < λ₁ < 0 | Nodo | Estable |
+| λ₁, λ₂ reales | λ₂ < λ₁ < 0 | Nodo | Asintóticamente estable |
 | λ₁, λ₂ reales | λ₂ > λ₁ > 0 | Nodo | Inestable |
 | λ₁, λ₂ reales | λ₂ < 0 < λ₁ | Silla | Inestable |
-| λ = λ₁ = λ₂ | λ < 0 | Nodo estelar/tangente | Estable |
+| λ = λ₁ = λ₂ | λ < 0 | Nodo estelar/tangente | Asintóticamente estable |
 | λ = λ₁ = λ₂ | λ > 0 | Nodo estelar/tangente | Inestable |
-| λ = p ± iq | p = 0 | Centro | Estable |
-| λ = p ± iq | p < 0 | Foco | Estable |
+| λ = p ± iq | p = 0 | Centro | Neutralmente estable |
+| λ = p ± iq | p < 0 | Foco | Asintóticamente estable |
 | λ = p ± iq | p > 0 | Foco | Inestable |
+
+**Nota sobre estabilidad:**
+- **Asintóticamente estable:** Las trayectorias convergen al punto crítico cuando t → ∞
+- **Neutralmente estable (Centro):** Las trayectorias permanecen cerca del punto crítico (órbitas cerradas) pero no convergen a él
+- **Inestable:** Las trayectorias se alejan del punto crítico
 
 ### 4. Qué Suelen Pedir en Exámenes
 
@@ -813,9 +818,9 @@ Y dibuja el mapa de fases para k = 0, k = 1, k = 3.
    - Complejos → Centro o Foco
 
 6. **Estabilidad:** Depende del signo de parte real
-   - Re(λ) < 0 → Estable
+   - Re(λ) < 0 → Asintóticamente estable
    - Re(λ) > 0 → Inestable
-   - Re(λ) = 0 → Centro (caso especial)
+   - Re(λ) = 0 → Centro (neutralmente estable)
 
 7. **Sistemas no-lineales:** Aproximación lineal
    - Jacobiana en punto crítico
