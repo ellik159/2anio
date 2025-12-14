@@ -845,20 +845,20 @@ Los exámenes suelen incluir:
 ❌ **No descomponer fuerzas** en problemas 2D o 3D
 ❌ **Confundir campo de carga positiva y negativa**
 
-### 4. **Fórmulas Esenciales para Memorizar**
+### Fórmulas Esenciales para Memorizar
 
 ```
-Ley de Coulomb: F = K·q₁·q₂/r² donde K = 9 × 10⁹ N·m²/C²
+Ley de Coulomb: F⃗ = K·(q₁·q₂/r²)·r̂  donde K = 9 × 10⁹ N·m²/C²
 
 Campo eléctrico: E⃗ = F⃗/q
 
-Campo de carga puntual: E = K·q/r²
+Campo de carga puntual: E⃗ = K·(q/r²)·r̂
 
-Línea infinita: E = λ/(2πε₀r)
+Línea infinita: E⃗ = λ/(2πε₀r)·r̂
 
-Plano infinito: E = σ/(2ε₀)
+Plano infinito: E⃗ = σ/(2ε₀)·n̂
 
-Condensador (entre placas): E = σ/ε₀
+Condensador (entre placas): E⃗ = (σ/ε₀)·n̂
 ```
 
 ### 5. **Gestión del Tiempo**
@@ -923,6 +923,8 @@ Asegúrate de saber:
 > "El campo eléctrico de una carga positiva apunta hacia afuera; de una negativa, hacia adentro"
 
 > "Siempre dibuja un diagrama antes de empezar a calcular"
+
+> "La fuerza eléctrica decrece con 1/r²"
 
 ---
 
