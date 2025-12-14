@@ -468,7 +468,10 @@ $$v_0 = \frac{2.02}{0.02} \times \sqrt{10} = 101 \times \sqrt{10}$$
 
 $$v_0 = 101 \times 3.162 = 319.4 \text{ m/s}$$
 
-**Respuesta**: La velocidad de la bala es **316.18 m/s** (usando valor más preciso de $\sqrt{10}$)
+**Nota**: La discrepancia con la respuesta oficial (316.18 m/s) se debe a que el problema original usa $g = 9.8$ m/s² en lugar de $g = 10$ m/s². Con $g = 9.8$ m/s²:
+$$v_0 = 101 \times \sqrt{2 \times 9.8 \times 0.5} = 101 \times 3.130 = 316.18 \text{ m/s}$$
+
+**Respuesta**: La velocidad de la bala es **316.18 m/s** (usando $g = 9.8$ m/s²)
 
 **Como profesor te explico**: 
 - El péndulo balístico es un método ingenioso para medir velocidades muy altas
@@ -477,7 +480,8 @@ $$v_0 = 101 \times 3.162 = 319.4 \text{ m/s}$$
 - Observa el factor de amplificación: $\frac{M+m}{m} = \frac{2.02}{0.02} = 101$, que es enorme porque la bala es muy ligera comparada con el péndulo
 
 **Fórmula directa** (usando la fórmula del tema):
-$$v_0 = \frac{M + m}{m}\sqrt{2gL(1 - \cos\theta)} = \frac{2.02}{0.02}\sqrt{2 \times 10 \times 1 \times 0.5} = 101\sqrt{10} \text{ m/s}$$
+- Con $g = 10$ m/s²: $v_0 = \frac{2.02}{0.02}\sqrt{2 \times 10 \times 1 \times 0.5} = 101\sqrt{10} = 319.4$ m/s
+- Con $g = 9.8$ m/s²: $v_0 = \frac{2.02}{0.02}\sqrt{2 \times 9.8 \times 1 \times 0.5} = 316.18$ m/s ✓
 
 ---
 
