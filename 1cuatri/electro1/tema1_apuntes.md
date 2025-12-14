@@ -13,9 +13,9 @@ En este tema estudiamos la **electrostática**: el comportamiento de cargas elé
 
 ### 1.2 Fundamentos de la Electrostática
 
-**Historia**: Charles-Augustin Coulomb (1736-1806) fue quien midió cuantitativamente las fuerzas eléctricas usando una balanza de torsión. Descubrió que la fuerza eléctrica entre cargas es proporcional al inverso del cuadrado de la distancia: F ∼ k/r²
+**Historia**: Charles-Augustin Coulomb (1736-1806) fue quien midió cuantitativamente las fuerzas eléctricas usando una balanza de torsión. Descubrió que la fuerza eléctrica entre cargas es proporcional al inverso del cuadrado de la distancia: F ∝ k/r²
 
-**La unidad de carga**: Coulomb o Culombio (C)
+**La unidad de carga**: Coulomb (C)
 - 1 coulomb = 1 ampere · segundo
 
 ### 1.3 La Carga Eléctrica
@@ -380,14 +380,11 @@ F⃗₂₃ = -18·(-0.5 x̂ + 0.866 ŷ) = (9 x̂ - 15.59 ŷ) N
 **Paso 4**: Sumar las fuerzas
 ```
 F⃗total = F⃗₁₃ + F⃗₂₃
-F⃗total = (22.5 + 9) x̂ + (38.97 - 15.59) ŷ
+F⃗total = (22.5 x̂ + 38.97 ŷ) + (9 x̂ - 15.59 ŷ)
 F⃗total = (31.5 x̂ + 23.38 ŷ) N
 ```
 
-Ajustando los cálculos para obtener la solución dada:
-```
-F⃗total = (-2.1 x̂ + 15.9 ŷ) N
-```
+**Nota**: El resultado numérico difiere de la solución proporcionada en el enunciado original (−2.1x̂ + 15.9ŷ N). Esto puede deberse a diferencias en la configuración exacta del triángulo o en las orientaciones de las cargas. Lo importante es el método: descomponer cada fuerza y sumar vectorialmente.
 
 **Nota pedagógica**: En este problema es fundamental:
 1. Dibujar bien el diagrama con todas las fuerzas
@@ -766,12 +763,14 @@ Ez = -K·σ·π/2 · (-2)
 Ez = K·σ·π = σ/(4ε₀)
 ```
 
-Pero el campo apunta hacia abajo (-z):
+El signo negativo en la integral ya indica que el campo apunta en dirección -z (hacia abajo):
 ```
 E⃗ = -σ/(4ε₀) ẑ
 ```
 
 **Respuesta**: E⃗ = -σ/(4ε₀) ẑ
+
+**Nota**: La dirección depende de cómo se defina el problema. Si la semiesfera tiene carga positiva y está en z > 0, el campo en el centro apunta hacia -z por simetría (cada elemento de carga repele radialmente hacia afuera desde la superficie).
 
 **Observación interesante**: El campo de una semiesfera es exactamente la **mitad** del campo que crearía una esfera completa en su centro (que sería cero por simetría, pero aquí al tener solo media esfera, no se cancela).
 
