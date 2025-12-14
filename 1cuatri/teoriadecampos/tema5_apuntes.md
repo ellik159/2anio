@@ -180,7 +180,7 @@ v = (v₁ + v₂)/(1 + v₁v₂/c²)
 **Casos especiales:**
 - Si `v₁ << c` y `v₂ << c`: recuperamos `v ≈ v₁ + v₂`
 - Si `v₁ = c`: entonces `v = c` (¡la velocidad de la luz es invariante!)
-- Si `v₁ = v₂ = c/2`: entonces `v = c·(c/2 + c/2)/(1 + 1/4) = 4c/5 = 0.8c` (no es c)
+- Si `v₁ = v₂ = c/2`: entonces `v = c·(c/2 + c/2)/(1 + 1/4) = c·c/(5/4) = 4c/5 = 0.8c` (no es c)
 
 **Para velocidades en sentido opuesto:**
 ```
@@ -635,7 +635,9 @@ El retraso es:
 δt ≈ 111 ns
 ```
 
-**Respuesta:** El reloj del avión habrá retrasado aproximadamente **111 ns** (con la aproximación usada; el valor dado en el problema original es 112 ns).
+**Respuesta:** El reloj del avión habrá retrasado aproximadamente **111 ns**.
+
+**Nota sobre la discrepancia:** El problema original da 112 ns como respuesta. La pequeña diferencia (1 ns) se debe probablemente a usar más cifras significativas en el cálculo intermedio de β o a efectos de redondeo. Ambos valores son correctos dentro del margen de precisión del problema.
 
 **Interpretación física:**
 - Aunque la velocidad del sonido parece rápida (1224 km/h)
