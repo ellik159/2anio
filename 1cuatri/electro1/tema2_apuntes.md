@@ -262,10 +262,12 @@ E⃗ = 2x x̂ + y ŷ
 **Paso 3:** Calcular la carga encerrada
 
 **Del plano:**
-El plano en z = 1 está justo en la superficie del cubo. La carga encerrada es el área de la cara superior multiplicada por σₛ:
+El plano en z = 1 está justo en la superficie del cubo. Según el enunciado original, se considera que esta carga está encerrada. La carga encerrada es el área de la cara superior multiplicada por σₛ:
 ```
 q_plano = σₛ · A = 4 μC/m² · (2m × 2m) = 16 μC
 ```
+
+**Nota:** En problemas de frontera, la interpretación puede variar, pero seguimos el criterio del libro.
 
 **De la línea:**
 La línea atraviesa el cubo desde y = -1 hasta y = 1, longitud L = 2m:
@@ -443,8 +445,11 @@ E = Q/(πε₀r²)
 **Nota del profesor:** 
 - Observa cómo el campo entre los cascarones solo "ve" la carga del cascarón interno
 - Desde fuera, solo importa la carga neta total (5Q - Q = 4Q)
-- La simplificación algebraica: E = 4Q/(4πε₀r²) = 4Q/(4π·ε₀r²) = Q/(π·ε₀r²) ✓
-- Esta forma Q/(πε₀r²) es equivalente a 4Q/(4πε₀r²), solo factorizamos el 4
+- La simplificación algebraica paso a paso:
+  * E = 4Q/(4πε₀r²) 
+  * E = (4Q)/[(4π)·ε₀r²]
+  * E = 4·Q/[4·π·ε₀r²]
+  * E = Q/(π·ε₀r²) ✓
 - El conductor externo redistribuye su carga: -5Q en su superficie interna (para cancelar el campo del cascarón interno) y +4Q en su superficie externa
 
 ---
